@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" col>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" media="screen" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts/index.js"></script>
+    <title>AVINYAA 24</title>
+  </head>
+  <style>
+    button {
+      background-color: #fff;
+      border: 1px solid #000;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #000;
+      margin-top: 10px;
+      justify-content: center;
+    }
+    button:hover {
+      background-color: #562280;
+      color: #fff;
+    }
+    #loading-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+    }
+    .content {
+      margin-top: 20px;
+      padding: 2rem;
+      max-width: 60rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      backdrop-filter: blur(16px) saturate(180%);
+      -webkit-backdrop-filter: blur(16px) saturate(180%);
+      background-color: rgba(31, 11, 36, 0.75);
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.125);
+    }
+    .content .event-details {
+      display: flex;
+      flex-direction: column;
+      justify-content: justify;
+    }
+    .content .event-details .heading {
+      font-size: 3rem;
+      font-weight: 600;
+      color: #fff;
+      padding-top: 1rem;
+    }
+    .heading-co {
+      font-size: 2rem;
+      font-weight: 600;
+      color: #fff;
+      padding-top: 1rem;
+    }
+    .content .event-details .rules {
+      font-size: 2rem;
+      font-weight: 600;
+      color: #f133ff;
+      text-align: left;
+    }
+    .content .event-details .rules p {
+      font-size: 1.7rem;
+      font-weight: 400;
+      color: #fff;
+      text-align: left;
+    }
+    .event-details img {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 3rem;
+      max-width: 100%;
+      border-radius: 100px;
+    }
+    .content .images img {
+      width: 400px;
+    }
+    .main {
+      padding: 5rem;
+      display: flex;
+      justify-content: center;
+    }
+    .codet {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 1rem;
+    }
+    .codet p {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #fff;
+    }
+    .cords {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+    .cords-sec {
+      top: -3rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+    .cords h2 {
+      font-size: 2rem;
+      font-weight: 600;
+      color: #f133ff;
+    }
+    .codet .org {
+      font-size: 0.5rem;
+      font-weight: 600;
+      color: #fff;
+    }
+  </style>
+  <body>
+    <!-- particles.js container -->
+    <div id="particles-js"></div>
+
+    <!-- scripts -->
+    <script src="./particles.js"></script>
+    <script src="js/app.js"></script>
+
+    <!-- stats.js -->
+    <script src="js/lib/stats.js"></script>
+    <nav class="navbar" id="Navbar">
+      <div class="navbar-container container navbar-elements">
+        <input type="checkbox" name="" id="" />
+        <div class="hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+        <ul class="menu-items navbar-elements">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#Events">Events</a></li>
+          <li><a href="#More-Info">More Info</a></li>
+          <li><a href="#About-us">About Us</a></li>
+        </ul>
+        <h1 class="logo">AVINYAA</h1>
+      </div>
+    </nav>
+    <div class="main">
+      <section class="content">
+        <div class="event-details">
+          <h1 class="heading">About Code Rush</h1>
+          <br />
+          <img src="event posters/17.png" />
+          <h1 class="rules">Description :</h1>
+          <p>
+            "CODE RUSH" a coding challenge ,where show off your coding
+            expertise! Take part in our blitz challenge by answering questions
+            about coding, earning valuable seconds to solve the coding
+            challenge, and then solving a blind coding mystery. Prove your
+            speed, wit, and problem-solving ability in this 2-round battle.
+            Think fast, code faster.
+          </p>
+          <h1 class="rules">Rules :</h1>
+          <p>Solo event.</p>
+          <p>Consists of 2 rounds.</p>
+
+          <p>Strict measures against plagiarism .</p>
+          <p>
+            Evaluation will be based on your understanding of questions, Time
+            complexity and test case passed
+          </p>
+          <p>Helping the other participants during the event is not allowed.</p>
+          <br />
+          <h1 class="rules">Evaluation :</h1>
+          <p>Time complexity of the code.</p>
+          <p>Time used to solve the code.</p>
+          <p>
+            Functionality: Does your code generate the correct output for all
+            test cases? This is the ultimate test of your understanding of the
+            problem and the accuracy of your solution.
+          </p>
+          <p>
+            Readability : Even in the absence of visual cues, can others
+            understand your code? Clear variable names, comments, and proper
+            structure will earn you points.
+          </p>
+          <p>
+            Error Handling: Evaluates how the code gracefully handles unexpected
+            inputs or errors, ensuring robustness .
+          </p>
+          <br />
+          <div class="event-organisers">
+            <h1 class="heading-co">Event Coordinator :</h1>
+            <div class="cords">
+              <div class="codet">
+                <h2>TARUN KUMAR</h2>
+                <p style="color: #fff">+91 81241 71017</p>
+              </div>
+              <div class="codet">
+                <h2>CHIRANJEEVI</h2>
+                <p style="color: #fff">+91 93812 35916</p>
+              </div>
+            </div>
+            <h1 class="heading-co">Event Organisers :</h1>
+            <div class="cords">
+              <div class="codet">
+                <p>JAIKISHORE</p>
+              </div>
+              <div class="codet">
+                <p>RUSHIKESHWAR</p>
+              </div>
+              <div class="codet">
+                <p>JOSHITA</p>
+              </div>
+            </div>
+            <div class="cords-sec mt-3">
+              <div class="codet">
+                <p>DIVYA SRI</p>
+              </div>
+              <div class="codet">
+                <p>LOCHAN</p>
+              </div>
+              <div class="codet">
+                <p>ARUL RAJ</p>
+              </div>
+            </div>
+          </div>
+          <button id="login-btn" class="register-btn">Register</button>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img src="avinyaa font.png" alt="" />
+        </div>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/avinyaa_24/"
+            ><img src="icons/instagram.png" alt=""
+          /></a>
+          <a href="https://www.linkedin.com/company/avinyaa-24"
+            ><img src="icons/linkedin.png" alt=""
+          /></a>
+          <a href="https://www.facebook.com/avinyaa24"
+            ><img src="icons/facebook.png" alt=""
+          /></a>
+          <a href="https://twitter.com/avinyaa_24"
+            ><img src="icons/twitter.png" alt=""
+          /></a>
+        </div>
+        <div class="footer-address">
+          <a href="https://maps.app.goo.gl/3nuSQv3apnwAQqWA9">
+            <h3>ADDRESS</h3>
+            <p>
+              R.M.D. Engineering College, Kavaraipettai, Thiruvallur District,
+              Tamil Nadu 601206
+            </p>
+          </a>
+        </div>
+      </div>
+      <div class="footer-credits">
+        <p>Made with ❤️ by RMDEC AIML</p>
+      </div>
+    </footer>
+  </body>
+  <script>
+    document.querySelector("#login-btn").onclick = () => {
+      document.querySelector(".login-form").classList.toggle("active");
+    };
+
+    document.querySelector("#close-login-form").onclick = () => {
+      document.querySelector(".login-form").classList.remove("active");
+    };
+  </script>
+</html>

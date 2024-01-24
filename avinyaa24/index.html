@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en" col>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" media="screen" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts/index.js"></script>
+    <title>AVINYAA 24</title>
+  </head>
+  <body>
+    <!-- particles.js container -->
+    <div id="particles-js"></div>
+
+    <!-- scripts -->
+    <script src="./particles.js"></script>
+    <script src="js/app.js"></script>
+
+    <!-- stats.js -->
+    <script src="js/lib/stats.js"></script>
+    <nav class="navbar" id="Navbar">
+      <div class="navbar-container container navbar-elements">
+        <input type="checkbox" name="" id="" />
+        <div class="hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+        <ul class="menu-items navbar-elements">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#Events">Events</a></li>
+          <li><a href="rmdbus.pdf">Bus Routes</a></li>
+        </ul>
+        <h1 class="logo">AVINYAA</h1>
+      </div>
+    </nav>
+    <div class="home mt-5">
+      <div class="home-content">
+        <h1 class="clg-title">R.M.D. ENGINEERING COLLEGE</h1>
+        <h2 class="clg-subtitle">
+          DEPARTMENT OF
+          <span>ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING</span>
+        </h2>
+        <h3 class="clg-subtitle">Presents</h3>
+        <div class="event-title">
+          <img src="avinyaa font.png" />
+        </div>
+      </div>
+      <div class="">
+        <div class="eve">
+          <h2>EVENT STARTS ON</h2>
+        </div>
+      </div>
+      <div id="countdown" class="align-items-center">
+        <div id="childrendelay">
+          <ul class="time">
+            <li><span id="days"></span>days</li>
+            <li><span id="hours"></span>Hours</li>
+            <li><span id="minutes"></span>Minutes</li>
+            <li><span id="seconds"></span>Seconds</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="heading" id="Events">
+      <h1>TECHNICAL EVENTS</h1>
+    </div>
+    <section class="icons-container">
+      <div
+        class="icons"
+        onmouseover="showReadMore(this)"
+        onmouseout="hideReadMore(this)"
+      >
+        <div class="first-content">
+          <img src="event posters/2.png" alt="" />
+          <div class="content">
+            <h3>SITE SYNC</h3>
+          </div>
+        </div>
+        <div class="iconsonhover">
+          <div class="content">
+            <h3>Site Sync</h3>
+            <p class="text">
+              Click a picture of your pet and post it on your Instagram handle
+              with the hashtag #avinyaa24 and tag @avinyaa_24
+            </p>
+            <div
+              class="container-button"
+              onclick="window.location.href='sitesync.html'"
+            >
+              <div class="hover bt-1"></div>
+              <div class="hover bt-2"></div>
+              <div class="hover bt-3"></div>
+              <div class="hover bt-4"></div>
+              <div class="hover bt-5"></div>
+              <div class="hover bt-6"></div>
+              <button class="click-here-btn"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="icons"
+        onmouseover="showReadMore(this)"
+        onmouseout="hideReadMore(this)"
+      >
+        <div class="first-content">
+          <img src="event posters/17.png" alt="" />
+          <div class="content">
+            <h3>CODE RUSH</h3>
+          </div>
+        </div>
+        <div class="iconsonhover">
+          <div class="content">
+            <h3>Code Rush</h3>
+            <p class="text">
+              Click a picture of your pet and post it on your Instagram handle
+              with the hashtag #avinyaa24 and tag @avinyaa_24
+            </p>
+            <div
+              class="container-button"
+              onclick="window.location.href='coderush.html'"
+            >
+              <div class="hover bt-1"></div>
+              <div class="hover bt-2"></div>
+              <div class="hover bt-3"></div>
+              <div class="hover bt-4"></div>
+              <div class="hover bt-5"></div>
+              <div class="hover bt-6"></div>
+              <button class="click-here-btn"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="icons"
+        onmouseover="showReadMore(this)"
+        onmouseout="hideReadMore(this)"
+      >
+        <div class="first-content">
+          <img src="event posters/14.png" alt="" />
+          <div class="content">
+            <h3>NEURAMATRIX</h3>
+          </div>
+        </div>
+        <div class="iconsonhover">
+          <div class="content">
+            <h3>Neuramatrix</h3>
+            <p class="text">
+              Click a picture of your pet and post it on your Instagram handle
+              with the hashtag #avinyaa24 and tag @avinyaa_24
+            </p>
+            <div
+              class="container-button"
+              onclick="window.location.href='neuramatrix.html'"
+            >
+              <div class="hover bt-1"></div>
+              <div class="hover bt-2"></div>
+              <div class="hover bt-3"></div>
+              <div class="hover bt-4"></div>
+              <div class="hover bt-5"></div>
+              <div class="hover bt-6"></div>
+              <button class="click-here-btn"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="heading">
+      <h1>NON - TECHNICAL EVENTS</h1>
+    </div>
+    <section class="icons-container">
+      <div
+        class="icons"
+        onmouseover="showReadMore(this)"
+        onmouseout="hideReadMore(this)"
+      >
+        <div class="first-content">
+          <img src="event posters/4.png" alt="" />
+          <div class="content">
+            <h3>INSTA CLICK CLASH</h3>
+          </div>
+        </div>
+        <div class="iconsonhover">
+          <div class="content">
+            <h3>Insta Click Clash</h3>
+            <p class="text">
+              Click a picture of your pet and post it on your Instagram handle
+              with the hashtag #avinyaa24 and tag @avinyaa_24
+            </p>
+            <div
+              class="container-button"
+              onclick="window.location.href='instaclickclash.html'"
+            >
+              <div class="hover bt-1"></div>
+              <div class="hover bt-2"></div>
+              <div class="hover bt-3"></div>
+              <div class="hover bt-4"></div>
+              <div class="hover bt-5"></div>
+              <div class="hover bt-6"></div>
+              <button class="click-here-btn"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="icons"
+        onmouseover="showReadMore(this)"
+        onmouseout="hideReadMore(this)"
+      >
+        <div class="first-content">
+          <img src="event posters/7.png" alt="" />
+          <div class="content">
+            <h3>GAMEO</h3>
+          </div>
+        </div>
+        <div class="iconsonhover">
+          <div class="content">
+            <h3>Gameo</h3>
+            <p class="text">
+              Click a picture of your pet and post it on your Instagram handle
+              with the hashtag #avinyaa24 and tag @avinyaa_24
+            </p>
+            <div
+              class="container-button"
+              onclick="window.location.href='gameo.html'"
+            >
+              <div class="hover bt-1"></div>
+              <div class="hover bt-2"></div>
+              <div class="hover bt-3"></div>
+              <div class="hover bt-4"></div>
+              <div class="hover bt-5"></div>
+              <div class="hover bt-6"></div>
+              <button class="click-here-btn"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="icons"
+        onmouseover="showReadMore(this)"
+        onmouseout="hideReadMore(this)"
+      >
+        <div class="first-content">
+          <img src="event posters/12.png" alt="" />
+          <div class="content">
+            <h3>VALORANT</h3>
+          </div>
+        </div>
+        <div class="iconsonhover">
+          <div class="content">
+            <h3>Valorant</h3>
+            <p class="text">
+              Click a picture of your pet and post it on your Instagram handle
+              with the hashtag #avinyaa24 and tag @avinyaa_24
+            </p>
+            <div
+              class="container-button"
+              onclick="window.location.href='valorant.html'"
+            >
+              <div class="hover bt-1"></div>
+              <div class="hover bt-2"></div>
+              <div class="hover bt-3"></div>
+              <div class="hover bt-4"></div>
+              <div class="hover bt-5"></div>
+              <div class="hover bt-6"></div>
+              <button class="click-here-btn"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <h1>EVENT COORDINATORS</h1>
+    <section class="icons-container-footer">
+      <div class="icons">
+        <div class="content">
+          <h3></h3>
+          <p>
+            Aswin S, Deepa Shree, Roshini, Jayaram Aditthya, Murugesh, Madhava
+            Prasath, Ajith Singh, Lakshiya and Krithika
+          </p>
+        </div>
+      </div>
+      <div class="icons">
+        <div class="content">
+          <h3>POSTER TEAM</h3>
+          <p></p>
+          <p>Jayaram Aditthya, DALL-E, Murugesh, Madhav, Mohith</p>
+        </div>
+      </div>
+      <div class="icons">
+        <div class="content">
+          <h3>WEBSITE TEAM</h3>
+          <p></p>
+          <p>Jayaram Aditthya, Murugesh, Madhav, Madan H.S.</p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img src="avinyaa font.png" alt="" />
+        </div>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/avinyaa_24/"
+            ><img src="icons/instagram.png" alt=""
+          /></a>
+          <a href="https://www.linkedin.com/company/avinyaa-24"
+            ><img src="icons/linkedin.png" alt=""
+          /></a>
+          <a href="https://www.facebook.com/avinyaa24"
+            ><img src="icons/facebook.png" alt=""
+          /></a>
+          <a href="https://twitter.com/avinyaa_24"
+            ><img src="icons/twitter.png" alt=""
+          /></a>
+        </div>
+        <div class="footer-address">
+          <a href="https://maps.app.goo.gl/3nuSQv3apnwAQqWA9">
+            <h3>ADDRESS</h3>
+            <p>
+              R.M.D. Engineering College, Kavaraipettai, Thiruvallur District,
+              Tamil Nadu 601206
+            </p>
+          </a>
+        </div>
+      </div>
+      <div class="footer-credits">
+        <p>Made with ❤️ by RMDEC AIML</p>
+      </div>
+    </footer>
+  </body>
+</html>
